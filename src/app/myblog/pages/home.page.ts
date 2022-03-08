@@ -78,6 +78,56 @@ export class HomePage implements OnInit {
             image:'https://picsum.photos/300/300',
             router:['/gallery']
         },
+        {
+            title: 'Gallery 1',
+            image:'https://picsum.photos/300/300',
+            router:['/gallery']
+        },
+        {
+            title: 'Gallery 1',
+            image:'https://picsum.photos/300/300',
+            router:['/gallery']
+        },
+        {
+            title: 'Gallery 1',
+            image:'https://picsum.photos/300/300',
+            router:['/gallery']
+        },
+        {
+            title: 'Gallery 1',
+            image:'https://picsum.photos/300/300',
+            router:['/gallery']
+        },
+        {
+            title: 'Gallery 1',
+            image:'https://picsum.photos/300/300',
+            router:['/gallery']
+        },
+        {
+            title: 'Gallery 1',
+            image:'https://picsum.photos/300/300',
+            router:['/gallery']
+        },
+        {
+            title: 'Gallery 1',
+            image:'https://picsum.photos/300/300',
+            router:['/gallery']
+        },
+        {
+            title: 'Gallery 1',
+            image:'https://picsum.photos/300/300',
+            router:['/gallery']
+        },
+        {
+            title: 'Gallery 1',
+            image:'https://picsum.photos/300/300',
+            router:['/gallery']
+        },
+        {
+            title: 'Gallery 1',
+            image:'https://picsum.photos/300/300',
+            router:['/gallery']
+        },
 
     ]
 }
