@@ -1,12 +1,8 @@
 <div class="h-screen bg-blue-400 ">
 <div class="flex flex-wrap items-center justify-between gap-1 p-4">
-    <ng-container *ngFor="let i of _galleryList">
-        <button  [routerLink]="i.router"  class="w-3/12" routePath="/home">
+        <button *ngFor="let i of _galleryList"  [routerLink]="i.router"  class="w-3/12" routePath="/home">
             <img class="rounded-md" [src]="i.image" />
             <p>{{i.title}}</p>
-          </button>
-          
-    </ng-container>
-    
+          </button>   
   </div>
 </div>
