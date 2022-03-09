@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {AES,enc}  from 'crypto-js';  
+import {AES,enc} from 'crypto-js';  
 
 
 @Injectable({
