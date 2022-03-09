@@ -9,19 +9,27 @@ export class PersistService {
 
 
 
-    public cypherKey: string = "qKSikFr*a#aU263Aqi6nJqi!Zt6";
+    public _cypherKey: string = this.cypherKeygen();
 
+    cypherKeygen() {
+        var chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOP1234567890!@#$%^&*";
+        var pass = "";
+        for (var x = 0; x < 25; x++) {
+            var i = Math.floor(Math.random() * chars.length);
+            pass += chars.charAt(i);
+        }
+        return pass;
+    }
 
-    
     set(key: string, data: any) {
         
-        const _encryptedData = CryptoJS.AES.encrypt(data,this.cypherKey.trim())
+        const _encryptedData = CryptoJS.AES.encrypt(data,this._cypherKey.trim())
         return localStorage.setItem(key, _encryptedData.toString())
     }
     get(key: string) {
         let _ls:any = localStorage.getItem(key)
         console.log(_ls)
-        const _decryptedKey = CryptoJS.AES.decrypt(_ls,this.cypherKey.trim()).toString(CryptoJS.enc.Utf8)
+        const _decryptedKey = CryptoJS.AES.decrypt(_ls,this._cypherKey.trim()).toString(CryptoJS.enc.Utf8)
        
         return _decryptedKey ? _decryptedKey.toString() : ""
     }

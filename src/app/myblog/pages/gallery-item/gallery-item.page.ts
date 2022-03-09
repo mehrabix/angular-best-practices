@@ -21,6 +21,8 @@ export class GalleryItem implements OnInit {
      }
 
      persistSomething(){
+        var randomstring = Math.random().toString(36).slice(-8);
+        console.log(randomstring)
          this.persist.set("username","ahmad")
      }
      getSomething(){
