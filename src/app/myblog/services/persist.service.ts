@@ -7,8 +7,6 @@ import * as CryptoJS from 'crypto-js';
 })
 export class PersistService {
 
-
-
     public _cypherKey: string = "qKSikFr*a#aU263Aqi6nJqi!Zt6";
 
 
