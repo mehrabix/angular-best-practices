@@ -12,9 +12,9 @@ export class PersistService {
     public _cypherKey: string = this.cypherKeygen();
 
     cypherKeygen() {
-        var chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOP1234567890!@#$%^&*";
-        var pass = "";
-        for (var x = 0; x < 25; x++) {
+        let chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOP1234567890!@#$%^&*";
+        let pass = "";
+        for (let x = 0; x < 25; x++) {
             var i = Math.floor(Math.random() * chars.length);
             pass += chars.charAt(i);
         }
